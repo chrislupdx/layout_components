@@ -1,14 +1,10 @@
-// webpack.config.js
-// export a configuration object
-const HtmlPlugin = require(
-  'html-webpack-plugin'
-);
-
+const HtmlPlugin = require('html-webpack-plugin');
 const CleanPlugin = require('clean-webpack-plugin');
 
 // eslint-disable-next-line
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.js'
+  ,
   output: {
     filename: 'bundle.[hash].js'
   },
@@ -18,7 +14,6 @@ module.exports = {
   plugins: [
     new HtmlPlugin({ template: './src/index.html' }),
     new CleanPlugin()
-
   ],
   module: {
     rules: [
