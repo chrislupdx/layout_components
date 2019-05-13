@@ -1,3 +1,1 @@
-console.log('nope');
-
-
+const root = document.getElementById('root');
